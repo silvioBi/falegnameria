@@ -115,7 +115,12 @@ nav {
 // HERO
 
 .hero {
-  background: url('../pics/hero-home.JPG');
+  background: url('../pics/hero-home.JPG') center no-repeat;
+  width: 100vw;
+  height: 100vh;
+  background-size: cover;
+  position: absolute;
+
 }
 
 .hero h2 {
@@ -127,17 +132,38 @@ nav {
 }
 
 .secondary-button {
-  @include applyTextStyle($buttonText);// NOT WORKING
+  display: flex;
+  align-items: center;
+  @include applyTextStyle($buttonText);
   color: $white;
   background-color: rgba($black, 0.4);
   border: $white solid 2px;
   border-radius: 16px;
+  padding-bottom: 2px;
+  padding-left: 24px;
+  padding-right: 16px;
+  gap: 16px;
+}
+
+.secondary-button .arrow,
+.secondary-button:hover .arrow-hover {
+  display: inline-flex;
+}
+
+.secondary-button:hover .arrow,
+.secondary-button .arrow-hover {
+  display: none;
 }
 
 .hero .secondary-button {
   position: absolute;
-  z-index: 1;
   right: 120px;
   top: 120px;
-  padding-bottom:4px;
+}
+
+.bg-vector {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
