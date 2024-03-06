@@ -1,0 +1,98 @@
+$white: #FFF7F5;
+$black: #0D0806;
+$accent: #DC5B32;
+$blur: 20px;
+
+html {
+  height:fit-content;
+}
+
+body {
+  height: 100%;
+  background-color: $white;
+  color: $black;
+  margin: 0;
+}
+
+h1 {
+  font-size: 80px;
+  font-weight: 400;
+  font-family: Six Caps;
+  text-transform: uppercase;
+  letter-spacing: 3.20px;
+  margin:0;
+}
+
+h2 {
+  font-size: 40px;
+  font-weight: 400;
+  font-family: Six Caps;
+  text-transform: uppercase;
+  letter-spacing: 1.60px;
+  margin:0;
+}
+
+p {
+  font-size: 16px;
+  font-family: Darker Grotesque;
+  font-weight: 400;
+  margin:0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+// TOPBAR
+
+nav {
+  position: fixed;
+  width: 100%;
+  display: flex;
+  justify-items: stretch;
+  background-color: rgba($black, 0.4);
+  backdrop-filter: blur($blur);
+  margin:0;
+}
+
+.nav-items {
+  width: stretch;
+  justify-content: space-between;
+  align-items: center;
+  display: flex;
+  margin: 12px 120px 12px 120px;
+}
+
+.menu-icon-hover {
+  display: none;
+}
+
+.nav-icons:hover .menu-icon {
+  display: none;
+}
+
+.nav-icons:hover .menu-icon-hover {
+  display: flex;
+}
+
+
+// MENU
+.menu {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 80px;
+}
+
+.menu h1:hover {
+  font-size: 105px;
+  line-height: 105px;
+}
+
+// HERO
+
+.hero-image {
+  background-image: url("pics/hero-home.jpg"); //ADD IMAGE
+}
+

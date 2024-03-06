@@ -1,0 +1,80 @@
+body {
+  background-color: #FFF7F5;
+  color: #0D0806;
+  margin: 0;
+}
+
+h1 {
+  font-size: 80px;
+  font-weight: 400;
+  font-family: Six Caps;
+  text-transform: uppercase;
+  letter-spacing: 3.2px;
+  margin: 0;
+}
+
+h2 {
+  font-size: 40px;
+  font-weight: 400;
+  font-family: Six Caps;
+  text-transform: uppercase;
+  letter-spacing: 1.6px;
+  margin: 0;
+}
+
+p {
+  font-size: 16px;
+  font-family: Darker Grotesque;
+  font-weight: 400;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+nav {
+  position: fixed;
+  width: 100%;
+  display: flex;
+  justify-items: stretch;
+  background-color: rgba(13, 8, 6, 0.4);
+  -webkit-backdrop-filter: blur(20px);
+          backdrop-filter: blur(20px);
+  margin: 0;
+}
+
+.nav-items {
+  width: -webkit-fill-available;
+  width: -moz-available;
+  width: stretch;
+  justify-content: space-between;
+  align-items: center;
+  display: flex;
+  margin: 12px 120px 12px 120px;
+}
+
+.menu-icon-hover {
+  display: none;
+}
+
+.nav-icons:hover .menu-icon {
+  display: none;
+}
+
+.nav-icons:hover .menu-icon-hover {
+  display: flex;
+}
+
+.menu {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 80px;
+}
+
+.menu h1:hover {
+  font-size: 105px;
+  line-height: 105px;
+}/*# sourceMappingURL=falegnameria.css.map */

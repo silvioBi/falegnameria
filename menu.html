@@ -1,0 +1,43 @@
+<!doctype html>
+
+<html lang="it">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Menu</title>
+  <link href="css-sass/falegnameria.css" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Darker+Grotesque:wght@300..900&family=Six+Caps&display=swap"
+    rel="stylesheet">
+  <link rel="shortcut icon" type="image/jpg" href="logo/favicon.png" />
+</head>
+
+<body>
+<div class="nav-items">
+  <h2>menu</h2>
+  <div class="nav-icons">
+    <img onclick="closeMenu()" class="menu-icon" src="pics/close.svg" alt="close"/>
+    <img onclick="closeMenu()" class="menu-icon-hover" src="pics/close-hover.svg" alt="close"/>
+  </div>
+</div>
+
+<ul class="menu">
+  <a href="index.html"><h1>home</h1></a>
+  <a href="realizzazioni.html"><h1>realizzazioni</h1></a>
+  <a href="chisiamo.html"><h1>chi siamo</h1></a>
+  <a href="contatti"><h1>contatti & orari</h1></a>
+</ul>
+
+
+<script>
+  function closeMenu () {
+    window.history.back();
+    // CREATE ANIMATION STYLE
+  }
+</script>
+
+</body>
+
+</html>
