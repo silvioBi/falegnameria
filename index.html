@@ -23,7 +23,7 @@
 <body>
   <!-- ______________________________________ADD TOPBAR HERE_____________________________________ -->
   <div class="hero">
-    <button class="secondary-button">contattaci
+    <button class="secondary-button" onclick="navigateTo()">contattaci
       <img class="arrow" src="pics/arrow.svg" />
       <img class="arrow-hover" src="pics/arrow-hover.svg" />
     </button>
@@ -51,8 +51,12 @@
         </filter>
       </defs>
     </svg>
-
     <h2>Lascia che il legno racconti la tua storia</h2>
+
+    <div class="scroll-icon">
+      <img onclick="navigateTo()" class="scroll" src="pics/scroll.svg" alt="scroll"/>
+      <img onclick="navigateTo()" class="scroll-after" src="pics/scroll-after.svg" alt="scroll"/>
+    </div>
   </div>
   <div class="page-content">
     <div class="paragraph">
@@ -115,7 +119,7 @@
       </div>
       <div class="bodycopy">
         <!-- ___________________________________ TEXT FIELDS HERE______________________________________ -->
-        
+
         <a aria-label="Call Us" href="tel:0464783536" target="_blank">
           <div class="row">
             <p class="col1">tel</p>
