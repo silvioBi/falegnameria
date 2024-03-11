@@ -177,6 +177,7 @@ nav {
   gap: 48px;
 }
 
+.largeitem,
 .bodycopy {
   display: flex;
   flex-direction: column;
@@ -218,21 +219,9 @@ footer {
   gap: 80px;
 }
 
-.footer-info {
-  display: flex;
-  flex-direction: column;
-}
-
 footer .row {
   justify-content: space-between;
-}
-
-.row .bodycopy {
-  flex-grow: 1;
-}
-
-.largeitem {
-  flex-grow: 2;
+  align-items: center;
 }
 
 .logo {
@@ -243,12 +232,22 @@ footer .row {
   height: fit-content;
 }
 
+.row .bodycopy,
+.footer-map {
+  width: 50%;
+}
+
+.largeitem {
+  width: 100%;
+}
+
 .footer-link {
   color: #FFF7F5;
   background: none;
   border: none;
   justify-content: space-between;
   padding: 0;
+  gap: 8px;
 }
 
 .footer-link:hover {
@@ -263,4 +262,9 @@ footer .row {
 .footer-link:hover .arrow,
 .footer-link .arrow-hover {
   display: none;
+}
+
+.copyright {
+  opacity: 60%;
+  justify-self: center;
 }/*# sourceMappingURL=falegnameria.css.map */
