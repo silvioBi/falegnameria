@@ -22,7 +22,7 @@
 
 <body>
   <!-- ______________________________________ADD TOPBAR HERE_____________________________________ -->
-  <div class="hero">
+  <div class="hero home">
     <button class="secondary-button" onclick="navigateTo()">contattaci
       <img class="arrow" src="pics/arrow.svg" />
       <img class="arrow-hover" src="pics/arrow-hover.svg" />
@@ -118,7 +118,23 @@
         <h2>per qualsiasi informazione</h2>
       </div>
       <div class="bodycopy">
-        <!-- ___________________________________ TEXT FIELDS HERE______________________________________ -->
+
+        <!--text fields -->
+        <form action="https://formspree.io/f/xzbnvowg" method="POST">
+          <div class="field">
+            <label>Nome:</label>
+            <input type="name" name="name" placeholder="Woody Allen">
+          </div>
+          <div class="field">
+            <label>Email:</label>
+            <input type="email" name="email" placeholder="woodIsGood@gmail.com">
+          </div>
+          <div class="field">
+            <label>Message:</label>
+            <textarea name="message" placeholder="Write here your message..."></textarea>
+          </div>
+          <button class="primary-button" type="submit">Invia</button>
+        </form>
 
         <a aria-label="Call Us" href="tel:0464783536" target="_blank">
           <div class="row">

@@ -61,6 +61,15 @@ p {
   margin: 0;
 }
 
+label {
+  font-size: 12px;
+  font-family: Darker Grotesque;
+  font-weight: 500;
+  letter-spacing: 0.48px;
+  text-transform: uppercase;
+  margin: 0;
+}
+
 a {
   text-decoration: none;
   color: inherit;
@@ -122,12 +131,15 @@ nav {
 
 // HERO
 
+.home {
+  background: url('../pics/hero-home.JPG') center no-repeat;
+} // ERROR___________________________________________________________
+
 .hero {
   display: grid;
   position: relative;
   width: 100%;
   height: 100vh;
-  background: url('../pics/hero-home.JPG') center no-repeat;
   background-size: cover;
 }
 
@@ -251,6 +263,7 @@ nav {
   gap: 48px;
 }
 
+form,
 .largeitem,
 .bodycopy {
   display: flex;
@@ -278,6 +291,12 @@ nav {
   width: 65%;
   align-self: center;
 }
+
+.field {
+display: flex;
+flex-direction: column;
+}
+
 
 .decoration10 {
   position:absolute;
