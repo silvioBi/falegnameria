@@ -5,6 +5,24 @@ button {
   @include applyTextStyle($buttonText);
 }
 
+
+.primary-button {
+  justify-content: center;
+  background-color: $accent;
+  height: 48px;
+  width: 80%;
+  padding-bottom: 2px;
+  padding-left: 24px;
+  padding-right: 24px;
+  border: none;
+}
+
+.primary-button:hover {
+  background-color: transparent;
+  border: $accent solid 2px;
+}
+
+
 .secondary-button {
   color: $white;
   background-color: rgba($black, 0.4);

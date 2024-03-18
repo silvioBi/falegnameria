@@ -2,7 +2,7 @@ footer {
   display: grid;
   background-color: $black;
   color: $white;
-  padding: 80px 200px 16px 200px;
+  padding: 80px 120px 16px 120px;
   gap: 80px;
 }
 
@@ -12,9 +12,15 @@ footer .row {
 }
 
 .logo {
+  display: grid;
   justify-self: center;
   width: fit-content;
   height: fit-content;
+}
+
+.logo img {
+  justify-self: center;
+
 }
 
 .row .bodycopy,

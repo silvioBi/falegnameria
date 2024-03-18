@@ -1,9 +1,9 @@
 @import './variables';
+@import './typography';
 @import './topbar';
 @import './buttons';
 @import './hero';
 @import './footer';
-
 
 
 html,
@@ -17,45 +17,6 @@ body {
   background-color: $white;
   color: $black;
   overflow-x: hidden;
-}
-
-h1 {
-  font-size: 80px;
-  font-weight: 400;
-  font-family: Six Caps;
-  text-transform: uppercase;
-  letter-spacing: 3.20px;
-  margin: 0;
-}
-
-h2 {
-  font-size: 40px;
-  font-weight: normal;
-  font-family: Six Caps;
-  text-transform: uppercase;
-  letter-spacing: 1.60px;
-  margin: 0;
-}
-
-p {
-  font-size: 16px;
-  font-family: Darker Grotesque;
-  font-weight: normal;
-  letter-spacing: 0.64px;
-  margin: 0;
-}
-
-label {
-  font-size: 12px;
-  font-family: Darker Grotesque;
-  font-weight: 500;
-  letter-spacing: 0.48px;
-  text-transform: uppercase;
-}
-
-a {
-  text-decoration: none;
-  color: inherit;
 }
 
 
@@ -77,24 +38,9 @@ a {
 .page-content {
   display: grid;
   margin: 160px 120px 160px 120px;
-  gap: 80px;
+  gap: 120px;
 }
 
-.primary-button {
-  justify-content: center;
-  background-color: $accent;
-  height: 48px;
-  width: 320px;
-  padding-bottom: 2px;
-  padding-left: 24px;
-  padding-right: 24px;
-  border: none;
-}
-
-.primary-button:hover {
-  background-color: transparent;
-  border: $accent solid 2px;
-}
 
 .paragraph {
   display: flex;
@@ -155,12 +101,12 @@ textarea {
 }
 
 
-input:hover, 
+input:hover,
 textarea:hover {
   outline: 2px solid rgba($accent, 0.3);
 }
 
-input:focus-visible, 
+input:focus-visible,
 textarea:focus-visible {
   outline: 2px solid $accent;
 }
@@ -172,8 +118,12 @@ textarea:focus-visible {
   letter-spacing: 0.64px;
 }
 
+/* ________________________DECORATION STYLE HERE__________________________________
 .decoration10 {
   position: absolute;
   left: 20%;
   z-index: -1;
-}
+} */
+
+
+@import './responsiveness';

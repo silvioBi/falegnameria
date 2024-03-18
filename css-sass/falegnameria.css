@@ -1,3 +1,42 @@
+h1 {
+  font-size: 80px;
+  font-weight: 400;
+  font-family: Six Caps;
+  text-transform: uppercase;
+  letter-spacing: 3.2px;
+  margin: 0;
+}
+
+h2 {
+  font-size: 40px;
+  font-weight: normal;
+  font-family: Six Caps;
+  text-transform: uppercase;
+  letter-spacing: 1.6px;
+  margin: 0;
+}
+
+p {
+  font-size: 16px;
+  font-family: Darker Grotesque;
+  font-weight: normal;
+  letter-spacing: 0.64px;
+  margin: 0;
+}
+
+label {
+  font-size: 12px;
+  font-family: Darker Grotesque;
+  font-weight: 500;
+  letter-spacing: 0.48px;
+  text-transform: uppercase;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
 nav {
   position: fixed;
   width: 100%;
@@ -41,6 +80,22 @@ button {
   text-transform: uppercase;
   letter-spacing: 0.8px;
   margin: 0;
+}
+
+.primary-button {
+  justify-content: center;
+  background-color: #DC5B32;
+  height: 48px;
+  width: 80%;
+  padding-bottom: 2px;
+  padding-left: 24px;
+  padding-right: 24px;
+  border: none;
+}
+
+.primary-button:hover {
+  background-color: transparent;
+  border: #DC5B32 solid 2px;
 }
 
 .secondary-button {
@@ -99,6 +154,7 @@ button {
   left: 50%;
   transform: translate(-50%, -50%);
   color: #FFF7F5;
+  width: 32%;
 }
 
 .bg-vector {
@@ -106,6 +162,8 @@ button {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  width: 35%;
+  height: auto;
 }
 
 .scroll-icon {
@@ -143,7 +201,7 @@ footer {
   display: grid;
   background-color: #0D0806;
   color: #FFF7F5;
-  padding: 80px 200px 16px 200px;
+  padding: 80px 120px 16px 120px;
   gap: 80px;
 }
 
@@ -153,11 +211,16 @@ footer .row {
 }
 
 .logo {
+  display: grid;
   justify-self: center;
   width: -moz-fit-content;
   width: fit-content;
   height: -moz-fit-content;
   height: fit-content;
+}
+
+.logo img {
+  justify-self: center;
 }
 
 .row .bodycopy,
@@ -210,45 +273,6 @@ body {
   overflow-x: hidden;
 }
 
-h1 {
-  font-size: 80px;
-  font-weight: 400;
-  font-family: Six Caps;
-  text-transform: uppercase;
-  letter-spacing: 3.2px;
-  margin: 0;
-}
-
-h2 {
-  font-size: 40px;
-  font-weight: normal;
-  font-family: Six Caps;
-  text-transform: uppercase;
-  letter-spacing: 1.6px;
-  margin: 0;
-}
-
-p {
-  font-size: 16px;
-  font-family: Darker Grotesque;
-  font-weight: normal;
-  letter-spacing: 0.64px;
-  margin: 0;
-}
-
-label {
-  font-size: 12px;
-  font-family: Darker Grotesque;
-  font-weight: 500;
-  letter-spacing: 0.48px;
-  text-transform: uppercase;
-}
-
-a {
-  text-decoration: none;
-  color: inherit;
-}
-
 .menu {
   display: flex;
   flex-direction: column;
@@ -264,23 +288,7 @@ a {
 .page-content {
   display: grid;
   margin: 160px 120px 160px 120px;
-  gap: 80px;
-}
-
-.primary-button {
-  justify-content: center;
-  background-color: #DC5B32;
-  height: 48px;
-  width: 320px;
-  padding-bottom: 2px;
-  padding-left: 24px;
-  padding-right: 24px;
-  border: none;
-}
-
-.primary-button:hover {
-  background-color: transparent;
-  border: #DC5B32 solid 2px;
+  gap: 120px;
 }
 
 .paragraph {
@@ -372,8 +380,102 @@ textarea:focus-visible {
   letter-spacing: 0.64px;
 }
 
+/* ________________________DECORATION STYLE HERE__________________________________
 .decoration10 {
   position: absolute;
   left: 20%;
   z-index: -1;
+} */
+@media only screen and (max-width: 1024px) {
+  .bg-vector {
+    width: 45%;
+    top: 60%;
+  }
+  .hero h2 {
+    top: 62%;
+    width: 40%;
+  }
+  footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    align-items: center;
+    width: 50%;
+  }
+  .row .bodycopy,
+  .footer-map {
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 900px) {
+  .bg-vector {
+    width: 50%;
+    top: 60%;
+  }
+  .page-content {
+    display: flex;
+    flex-direction: column;
+  }
+  .hero .secondary-button {
+    right: 50%;
+    transform: translateX(50%);
+  }
+  .paragraph {
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 700px) {
+  .nav-items {
+    margin: 12px 80px 12px 80px;
+  }
+  .page-content {
+    margin: 120px 80px 120px 80px;
+  }
+  .bg-vector {
+    width: 60%;
+  }
+  .wrapper {
+    width: 100%;
+  }
+  .footer-link {
+    justify-content: left;
+  }
+}
+@media only screen and (max-width: 500px) {
+  h1 {
+    font-size: 60px;
+  }
+  h2 {
+    font-size: 32px;
+  }
+  .nav-items {
+    margin: 8px 40px 8px 40px;
+  }
+  .bg-vector {
+    width: 90%;
+  }
+  .hero h2 {
+    width: 70%;
+  }
+  .primary-button {
+    width: 100%;
+  }
+  .page-content {
+    margin: 120px 40px 40px 40px;
+  }
+  .largeitem .row {
+    display: block;
+  }
+  .logo img {
+    width: 70%;
+  }
+  footer {
+    padding: 80px 40px 8px 40px;
+    gap: 40px;
+  }
 }/*# sourceMappingURL=falegnameria.css.map */
