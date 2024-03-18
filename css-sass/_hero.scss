@@ -1,0 +1,72 @@
+// HERO
+.home {
+  background: url('../pics/hero-home.JPG') center no-repeat;
+}
+
+.hero {
+  display: grid;
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background-size: cover;
+}
+
+.hero::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba($black, 0.2);
+}
+
+.hero h2 {
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: $white;
+}
+
+.bg-vector {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.scroll-icon {
+  display: flex;
+  align-self: flex-end;
+  justify-self: center;
+}
+
+//SCROLL ICON ANIMATION
+.scroll,
+.scroll-after {
+  position: absolute;
+  top: 95%;
+  left: 50%;
+  transform: translate(-95%, -50%);
+  opacity: 0;
+}
+
+.scroll {
+  animation: fadeAnimation 1.5s linear infinite alternate;
+}
+
+.scroll-after {
+  animation: fadeAnimation 1.5s linear infinite alternate-reverse;
+}
+
+@keyframes fadeAnimation {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}

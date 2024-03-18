@@ -1,0 +1,55 @@
+footer {
+  display: grid;
+  background-color: $black;
+  color: $white;
+  padding: 80px 200px 16px 200px;
+  gap: 80px;
+}
+
+footer .row {
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  justify-self: center;
+  width: fit-content;
+  height: fit-content;
+}
+
+.row .bodycopy,
+.footer-map {
+  width: 50%;
+}
+
+.largeitem {
+  width: 100%;
+}
+
+.footer-link {
+  color: $white;
+  background: none;
+  border: none;
+  justify-content: space-between;
+  padding: 0;
+  gap: 8px;
+}
+
+.footer-link:hover {
+  color: $accent;
+}
+
+.footer-link .arrow,
+.footer-link:hover .arrow-hover {
+  display: inline-flex;
+}
+
+.footer-link:hover .arrow,
+.footer-link .arrow-hover {
+  display: none;
+}
+
+.copyright {
+  opacity: 60%;
+  justify-self: center;
+}
