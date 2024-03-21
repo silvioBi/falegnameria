@@ -125,8 +125,27 @@ button {
   top: 120px;
 }
 
+.breadcrumbs {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin: 40px;
+}
+
+.breadcrumb {
+  font-size: 16px;
+  font-family: Darker Grotesque;
+  font-weight: bold;
+  letter-spacing: 0.64px;
+  margin: 0;
+}
+
 .home {
   background: url("../pics/hero-home.JPG") center no-repeat;
+}
+
+.chisiamo {
+  background: url("../pics/hero-chisiamo.JPG") center no-repeat;
 }
 
 .hero {
@@ -237,6 +256,7 @@ footer .row {
   background: none;
   border: none;
   justify-content: space-between;
+  text-align: left;
   padding: 0;
   gap: 8px;
 }
@@ -278,6 +298,11 @@ body {
   flex-direction: column;
   align-items: center;
   gap: 80px;
+  padding: 0;
+}
+
+.menu h1 {
+  text-align: center;
 }
 
 .menu h1:hover {
@@ -386,14 +411,28 @@ textarea:focus-visible {
   left: 20%;
   z-index: -1;
 } */
+.fullwidth {
+  width: 100%;
+  height: auto;
+}
+
+.onpage {
+  color: #0D0806;
+  justify-content: flex-start;
+}
+
+.center {
+  justify-self: center;
+}
+
 @media only screen and (max-width: 1024px) {
   .bg-vector {
-    width: 45%;
+    width: 40%;
     top: 60%;
   }
   .hero h2 {
     top: 62%;
-    width: 40%;
+    width: 30%;
   }
   footer {
     display: flex;
@@ -415,7 +454,6 @@ textarea:focus-visible {
 @media only screen and (max-width: 900px) {
   .bg-vector {
     width: 50%;
-    top: 60%;
   }
   .page-content {
     display: flex;
@@ -426,6 +464,9 @@ textarea:focus-visible {
     transform: translateX(50%);
   }
   .paragraph {
+    width: 100%;
+  }
+  .wrapper {
     width: 100%;
   }
 }
@@ -439,11 +480,12 @@ textarea:focus-visible {
   .bg-vector {
     width: 60%;
   }
-  .wrapper {
-    width: 100%;
-  }
   .footer-link {
     justify-content: left;
+  }
+  footer {
+    padding: 80px 40px 8px 40px;
+    gap: 40px;
   }
 }
 @media only screen and (max-width: 500px) {
@@ -452,6 +494,13 @@ textarea:focus-visible {
   }
   h2 {
     font-size: 32px;
+  }
+  .menu {
+    gap: 40px;
+  }
+  .menu h1:hover {
+    font-size: 80px;
+    line-height: 80px;
   }
   .nav-items {
     margin: 8px 40px 8px 40px;
@@ -473,9 +522,5 @@ textarea:focus-visible {
   }
   .logo img {
     width: 70%;
-  }
-  footer {
-    padding: 80px 40px 8px 40px;
-    gap: 40px;
   }
 }/*# sourceMappingURL=falegnameria.css.map */

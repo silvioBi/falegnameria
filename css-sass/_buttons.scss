@@ -49,3 +49,18 @@ button {
   right: 120px;
   top: 120px;
 }
+
+.breadcrumbs {
+  display: flex;
+  align-items: center;
+  gap:1rem;
+  margin:40px;
+}
+
+.breadcrumb {
+  font-size: 16px;
+  font-family: Darker Grotesque;
+  font-weight: bold;
+  letter-spacing: 0.64px;
+  margin: 0;
+}

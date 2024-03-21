@@ -1,12 +1,12 @@
 @media only screen and (max-width: 1024px) {
   .bg-vector {
-    width: 45%;
+    width: 40%;
     top: 60%;
   }
 
   .hero h2 {
     top: 62%;
-    width: 40%;
+    width: 30%;
   }
 
   footer {
@@ -32,7 +32,6 @@
 @media only screen and (max-width: 900px) {
   .bg-vector {
     width: 50%;
-    top: 60%;
   }
 
   .page-content {
@@ -46,6 +45,10 @@
   }
 
   .paragraph {
+    width: 100%;
+  }
+
+  .wrapper {
     width: 100%;
   }
 }
@@ -64,12 +67,13 @@
     width: 60%;
   }
 
-  .wrapper {
-    width: 100%;
-  }
-
   .footer-link {
     justify-content: left;
+  }
+
+  footer {
+    padding: 80px 40px 8px 40px;
+    gap: 40px;
   }
 }
 
@@ -81,6 +85,15 @@
 
   h2 {
     font-size: 32px;
+  }
+
+  .menu {
+    gap: 40px;
+  }
+
+  .menu h1:hover {
+    font-size: 80px;
+    line-height: 80px;
   }
 
   .nav-items {
@@ -109,10 +122,5 @@
 
   .logo img {
     width: 70%;
-  }
-
-  footer {
-    padding: 80px 40px 8px 40px;
-    gap: 40px;
   }
 }

@@ -26,6 +26,11 @@ body {
   flex-direction: column;
   align-items: center;
   gap: 80px;
+  padding: 0;
+}
+
+.menu h1 {
+  text-align: center;
 }
 
 .menu h1:hover {
@@ -124,6 +129,23 @@ textarea:focus-visible {
   left: 20%;
   z-index: -1;
 } */
+
+
+//CHI SIAMO
+.fullwidth {
+  width: 100%;
+  height: auto;
+}
+
+.onpage {
+  color: $black;
+  justify-content: flex-start;
+}
+
+.center {
+  justify-self: center;
+}
+
 
 
 @import './responsiveness';
