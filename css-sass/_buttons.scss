@@ -20,6 +20,7 @@ button {
 .primary-button:hover {
   background-color: transparent;
   border: $accent solid 2px;
+  transition: .3s ease;
 }
 
 
@@ -37,11 +38,13 @@ button {
 .secondary-button .arrow,
 .secondary-button:hover .arrow-hover {
   display: inline-flex;
+
 }
 
 .secondary-button:hover .arrow,
 .secondary-button .arrow-hover {
   display: none;
+
 }
 
 .hero .secondary-button {

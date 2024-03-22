@@ -96,6 +96,7 @@ button {
 .primary-button:hover {
   background-color: transparent;
   border: #DC5B32 solid 2px;
+  transition: 0.3s ease;
 }
 
 .secondary-button {
@@ -148,6 +149,10 @@ button {
   background: url("../pics/hero-chisiamo.JPG") center no-repeat;
 }
 
+.realizzazioni {
+  background: url("../pics/hero-realizzazioni.JPG") center no-repeat;
+}
+
 .hero {
   display: grid;
   position: relative;
@@ -163,7 +168,7 @@ button {
   right: 0;
   bottom: 0;
   left: 0;
-  background-color: rgba(13, 8, 6, 0.2);
+  background-color: rgba(13, 8, 6, 0.25);
 }
 
 .hero h2 {
@@ -222,6 +227,11 @@ footer {
   color: #FFF7F5;
   padding: 80px 120px 16px 120px;
   gap: 80px;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: row;
 }
 
 footer .row {
@@ -425,6 +435,67 @@ textarea:focus-visible {
   justify-self: center;
 }
 
+.card {
+  flex-grow: 1;
+  aspect-ratio: 1/1;
+  min-width: 200px;
+  position: relative;
+  background-size: cover;
+  padding: 24px;
+  cursor: pointer;
+}
+.card button {
+  border: none;
+  background: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.card .card-title {
+  position: absolute;
+}
+
+.scopri {
+  opacity: 0;
+}
+
+.card:hover .scopri {
+  opacity: 1;
+  transition: 1s ease;
+}
+
+.card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(255, 247, 245, 0.4);
+}
+
+.arredamenti {
+  background: url("../pics/arredamenti.jpg") center no-repeat;
+  background-size: cover;
+}
+
+.finestre {
+  background: url("../pics/arredamenti.jpg") center no-repeat;
+  background-size: cover;
+}
+
+.porte {
+  background: url("../pics/arredamenti.jpg") center no-repeat;
+  background-size: cover;
+}
+
+.scopri {
+  position: absolute;
+  bottom: 1rem;
+  right: 1rem;
+}
+
 @media only screen and (max-width: 1024px) {
   .bg-vector {
     width: 40%;
@@ -443,8 +514,7 @@ textarea:focus-visible {
     display: flex;
     flex-direction: column;
     gap: 40px;
-    align-items: center;
-    width: 50%;
+    width: 70%;
   }
   .row .bodycopy,
   .footer-map {
@@ -479,6 +549,9 @@ textarea:focus-visible {
   }
   .bg-vector {
     width: 60%;
+  }
+  .scopri {
+    opacity: 1;
   }
   .footer-link {
     justify-content: left;
@@ -515,12 +588,33 @@ textarea:focus-visible {
     width: 100%;
   }
   .page-content {
-    margin: 120px 40px 40px 40px;
+    margin: 80px 40px 40px 40px;
+    gap: 80px;
   }
   .largeitem .row {
     display: block;
   }
   .logo img {
     width: 70%;
+  }
+}
+@media only screen and (max-width: 400px) {
+  .bodycopy .row {
+    flex-direction: column;
+    gap: 0;
+  }
+  .col1 {
+    width: 100%;
+  }
+  .col2 {
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 300px) {
+  .card {
+    min-width: 160px;
+  }
+  .scopri {
+    opacity: 0;
   }
 }/*# sourceMappingURL=falegnameria.css.map */

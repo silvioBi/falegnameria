@@ -6,6 +6,10 @@
   background: url('../pics/hero-chisiamo.JPG') center no-repeat;
 }
 
+.realizzazioni {
+  background: url('../pics/hero-realizzazioni.JPG') center no-repeat;
+}
+
 .hero {
   display: grid;
   position: relative;
@@ -21,7 +25,7 @@
   right: 0;
   bottom: 0;
   left: 0;
-  background-color: rgba($black, 0.2);
+  background-color: rgba($black, 0.25);
 }
 
 .hero h2 {

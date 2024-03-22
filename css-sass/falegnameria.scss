@@ -131,7 +131,7 @@ textarea:focus-visible {
 } */
 
 
-//CHI SIAMO
+//CHI SIAMO / REALIZZAZIONI
 .fullwidth {
   width: 100%;
   height: auto;
@@ -144,6 +144,69 @@ textarea:focus-visible {
 
 .center {
   justify-self: center;
+}
+
+.card {
+  flex-grow: 1;
+  aspect-ratio: 1 / 1;
+  min-width: 200px;
+  position: relative;
+  background-size: cover;
+  padding: 24px;
+  cursor: pointer;
+
+  button {
+    border: none;
+    background: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .card-title {
+    position:absolute;
+  }
+}
+
+.scopri {
+  opacity: 0;
+}
+
+.card:hover .scopri{
+  opacity: 1;
+  transition: 1s ease;
+}
+
+.card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba($white, 0.4);
+}
+
+.arredamenti {
+  background: url('../pics/arredamenti.jpg') center no-repeat;
+  background-size: cover;
+}
+
+.finestre {
+  background: url('../pics/arredamenti.jpg') center no-repeat;
+  background-size: cover;
+}
+
+.porte {
+  background: url('../pics/arredamenti.jpg') center no-repeat;
+  background-size: cover;
+}
+
+.scopri {
+  position: absolute;
+  bottom: 1rem;
+  right: 1rem;
 }
 
 

@@ -1,0 +1,154 @@
+<!doctype html>
+
+<html lang="it">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta property="og:title" content="Falegnameria Corradi - Home" />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="https://github.com/ValeriaCorradi/falegnameria/blob/main/pics/hero-home.JPG" />
+  <meta property="og:image:alt" content="Falegnameria Corradi" />
+  <meta property="og:url" content="https://www.falegnameriacorradi.it/realizzazioni" />
+  <meta property="og:description" content="Lascia che il legno racconti la tua storia" />
+  <title>Falegnameria Corradi - Realizzazioni </title>
+  <link href="css-sass/falegnameria.css" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Darker+Grotesque:wght@300..900&family=Six+Caps&display=swap"
+    rel="stylesheet">
+  <link rel="shortcut icon" type="image/jpg" href="logo/favicon.png" />
+</head>
+
+<body>
+  <!-- ______________________________________ADD TOPBAR HERE_____________________________________ -->
+  <div class="hero realizzazioni">
+    <button class="secondary-button" onclick="navigateTo()">contattaci
+      <img class="arrow" src="pics/arrow.svg" />
+      <img class="arrow-hover" src="pics/arrow-hover.svg" />
+    </button>
+
+    <!-- ___________________________________BACKDROP BLUR________________________________________ -->
+
+    <img class="bg-vector" src="pics/bg-vector.svg" />
+
+    <h2>Dal Bosco alla Tua Casa: Le Creazioni Uniche della Falegnameria Corradi</h2>
+
+    <div class="scroll-icon">
+      <img onclick="navigateTo()" class="scroll" src="pics/scroll.svg" alt="scroll" />
+      <img onclick="navigateTo()" class="scroll-after" src="pics/scroll-after.svg" alt="scroll" />
+    </div>
+  </div>
+
+  <div class="breadcrumbs">
+    <a class="breadcrumb" href="https://www.falegnameriacorradi.it/">Home</a>
+    <p> > </p>
+    <p>Realizzazioni</p>
+  </div>
+
+  <div class="page-content">
+    <div class="paragraph fullwidth">
+      <h1>le nostre realizzazioni </h1>
+      <div class="bodycopy">
+        <p>Lasciati ispirare dalle nostre creazioni.</p>
+        <p>Ogni pezzo che crea la Falegnameria Corradi è un'opera d'arte unica, plasmata con maestria e dedizione.</p>
+        <p>Scopri il fascino e la bellezza del legno lavorato con passione, esplorando le molteplici sfaccettature dei
+          nostri lavori.</p>
+      </div>
+    </div>
+
+    <div class="row wrapper">
+      <div class="card arredamenti" onclick="navigateTo()">
+        <div class="card-title">
+          <h2>Arredamenti</h2>
+          <p><strong>La tua casa con stile</strong></p>
+        </div>
+        <div class="scopri">
+          <img src="logo/partial-logo.svg" />
+          <button>SCOPRI</button>
+        </div>
+      </div>
+
+      <div class="card finestre" onclick="navigateTo()">
+        <div class="card-title">
+          <h2>Finestre</h2>
+          <p><strong>Una boccata d’aria fresca</strong></p>
+        </div>
+        <div class="scopri">
+          <img src="logo/partial-logo.svg" />
+          <button>SCOPRI</button>
+        </div>
+      </div>
+
+      <div class="card porte" onclick="navigateTo()">
+        <div class="card-title">
+          <h2>Porte & Portoncini</h2>
+          <p><strong>Tra sogno e realtà</strong></p>
+        </div>
+        <div class="scopri">
+          <img src="logo/partial-logo.svg" />
+          <button>SCOPRI</button>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="paragraph">
+      <div>
+        <h1>contattaci </h1>
+        <h2>RICHIEDI UN PREVENTIVO</h2>
+      </div>
+      <div class="bodycopy">
+
+        <!--text fields -->
+        <form action="https://formspree.io/f/xzbnvowg" method="POST">
+          <div class="field">
+            <label>Nome:</label>
+            <input type="name" name="name" placeholder="Elijah Wood">
+          </div>
+          <div class="field">
+            <label>Email:</label>
+            <input type="email" name="email" placeholder="woodIsGood@gmail.com">
+          </div>
+          <div class="field">
+            <label>Message:</label>
+            <textarea name="message" placeholder="Write here your message..."></textarea>
+          </div>
+          <button class="primary-button" type="submit">Invia</button>
+        </form>
+
+        <a aria-label="Call Us" href="tel:0464783536" target="_blank">
+          <div class="row">
+            <p class="col1">tel</p>
+            <p class="col2">+39 0464 783536</p>
+          </div>
+        </a>
+        <a aria-label="WhatsApp" href="https://wa.me/393403177641" target="_blank">
+          <div class="row">
+            <p class="col1">whatsapp</p>
+            <p class="col2">+39 340 3177641</p>
+          </div>
+        </a>
+        <a aria-label="Email" href="mailto:info@falegnameriacorradi.it">
+          <div class="row">
+            <p class="col1">EMAIL</p>
+            <p class="col2">info@falegnameriacorradi.it</p>
+          </div>
+        </a>
+        <a aria-label="Maps" href="https://maps.app.goo.gl/PtSQdTdnJwGNJcB78" target="_blank">
+          <div class="row">
+            <p class="col1">INDIRIZZO</p>
+            <p class="col2">Zona Artigianale, via Trieste 63 <br /> 38046, Lavarone TN</p>
+          </div>
+        </a>
+      </div>
+    </div>
+
+
+
+  </div>
+
+  <!-- _____________________________________ FOOTER HERE ____________________________________________ -->
+</body>
+
+</html>
