@@ -314,8 +314,8 @@ body {
 .menu {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  gap: 80px;
+  height: 85vh;
+  justify-content: space-between;
   padding: 0;
 }
 
@@ -588,9 +588,6 @@ textarea:focus-visible {
   }
   h2 {
     font-size: 32px;
-  }
-  .menu {
-    gap: 40px;
   }
   .menu h1:hover {
     font-size: 80px;
