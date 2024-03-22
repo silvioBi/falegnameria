@@ -1,0 +1,127 @@
+<!doctype html>
+
+<html lang="it">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta property="og:title" content="Falegnameria Corradi - Contatti & Orari" />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="https://github.com/ValeriaCorradi/falegnameria/blob/main/pics/hero-home.JPG" />
+  <meta property="og:image:alt" content="Falegnameria Corradi" />
+  <meta property="og:url" content="https://www.falegnameriacorradi.it/contattiorari" />
+  <meta property="og:description" content="Porta il tuo sogno da noi: contatti & orari" />
+  <title>Falegnameria Corradi - Contatti & Orari </title>
+  <link href="css-sass/falegnameria.css" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Darker+Grotesque:wght@300..900&family=Six+Caps&display=swap"
+    rel="stylesheet">
+  <link rel="shortcut icon" type="image/jpg" href="logo/favicon.png" />
+</head>
+
+<body>
+  <!-- ______________________________________ADD TOPBAR HERE_____________________________________ -->
+  <div class="hero contattiorari">
+    <button class="secondary-button" onclick="navigateTo()">contattaci
+      <img class="arrow" src="pics/arrow.svg" />
+      <img class="arrow-hover" src="pics/arrow-hover.svg" />
+    </button>
+
+    <!-- ___________________________________BACKDROP BLUR________________________________________ -->
+
+    <img class="bg-vector" src="pics/bg-vector.svg" />
+
+    <h2>Porta il tuo sogno da noi: contatti & orari</h2>
+
+    <div class="scroll-icon">
+      <img onclick="navigateTo()" class="scroll" src="pics/scroll.svg" alt="scroll" />
+      <img onclick="navigateTo()" class="scroll-after" src="pics/scroll-after.svg" alt="scroll" />
+    </div>
+  </div>
+
+  <div class="breadcrumbs">
+    <a class="breadcrumb" href="https://www.falegnameriacorradi.it/">Home</a>
+    <p> > </p>
+    <p>Contatti & Orari</p>
+  </div>
+
+  <div class="page-content">
+    <div class="paragraph fullwidth">
+      <h1>le nostre realizzazioni </h1>
+
+      <div class="row wrapper">
+        <div class="bodycopy">
+          <form action="https://formspree.io/f/xzbnvowg" method="POST">
+            <div class="field">
+              <label>Nome:</label>
+              <input type="name" name="name" placeholder="Elijah Wood">
+            </div>
+            <div class="field">
+              <label>Email:</label>
+              <input type="email" name="email" placeholder="woodIsGood@gmail.com">
+            </div>
+            <div class="field">
+              <label>Message:</label>
+              <textarea name="message" placeholder="Write here your message..."></textarea>
+            </div>
+            <button class="primary-button" type="submit">Invia</button>
+          </form>
+        </div>
+
+        <div class="bodycopy">
+          <a aria-label="Call Us" href="tel:0464783536" target="_blank">
+            <div class="row">
+              <p class="col1">tel</p>
+              <p class="col2">+39 0464 783536</p>
+            </div>
+          </a>
+          <a aria-label="WhatsApp" href="https://wa.me/393403177641" target="_blank">
+            <div class="row">
+              <p class="col1">whatsapp</p>
+              <p class="col2">+39 340 3177641</p>
+            </div>
+          </a>
+          <a aria-label="Email" href="mailto:info@falegnameriacorradi.it">
+            <div class="row">
+              <p class="col1">EMAIL</p>
+              <p class="col2">info@falegnameriacorradi.it</p>
+            </div>
+          </a>
+          <a aria-label="Maps" href="https://maps.app.goo.gl/PtSQdTdnJwGNJcB78" target="_blank">
+            <div class="row">
+              <p class="col1">INDIRIZZO</p>
+              <p class="col2">Zona Artigianale, via Trieste 63 <br /> 38046, Lavarone TN</p>
+            </div>
+          </a>
+          <iframe class="map"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2774.5799837468053!2d11.25494717582817!3d45.93969390158835!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4778a1925ce38857%3A0xb7f3535542962e2!2sFalegnameria%20Corradi!5e0!3m2!1sit!2spt!4v1710092972060!5m2!1sit!2spt"
+            allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+          </iframe>
+        </div>
+      </div>
+    </div>
+
+    <div class="paragraph fullwidth">
+      <h1>orari</h1>
+      <div class="bodycopy">
+        <div class="row">
+          <p class="col1">LUN - VEN </p>
+          <p class="col2">8.00 - 12.00 & 13.30 - 17.00</p>
+        </div>
+        <div class="row">
+          <p class="col1">SAB - DOM </p>
+          <p class="col2">CHIUSO</p>
+        </div>
+        <div class="row">
+          <p class="col1">CHIUSURA STAGIONALE</p>
+          <p class="col2">DA DICEMBRE A MARZO</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- _____________________________________ FOOTER HERE ____________________________________________ -->
+</body>
+
+</html>

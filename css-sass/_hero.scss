@@ -10,6 +10,10 @@
   background: url('../pics/hero-realizzazioni.JPG') center no-repeat;
 }
 
+.contattiorari {
+  background: url('../pics/hero-contattiorari.JPG') center no-repeat;
+}
+
 .hero {
   display: grid;
   position: relative;
@@ -36,7 +40,6 @@
   transform: translate(-50%, -50%);
   color: $white;
   width: 32%;
-
 }
 
 .bg-vector {
@@ -60,7 +63,7 @@
   position: absolute;
   top: 95%;
   left: 50%;
-  transform: translate(-95%, -50%);
+  transform: translate(-50%, -50%);
   opacity: 0;
 }
 

@@ -38,13 +38,11 @@ button {
 .secondary-button .arrow,
 .secondary-button:hover .arrow-hover {
   display: inline-flex;
-
 }
 
 .secondary-button:hover .arrow,
 .secondary-button .arrow-hover {
   display: none;
-
 }
 
 .hero .secondary-button {
@@ -66,4 +64,9 @@ button {
   font-weight: bold;
   letter-spacing: 0.64px;
   margin: 0;
+}
+
+.breadcrumb:hover {
+  color: $accent;
+  
 }
