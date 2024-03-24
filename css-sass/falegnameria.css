@@ -129,6 +129,7 @@ button {
 .breadcrumbs {
   display: flex;
   align-items: center;
+  flex-wrap: wrap;
   gap: 1rem;
   margin: 40px;
 }
@@ -159,6 +160,10 @@ button {
 
 .contattiorari {
   background: url("../pics/hero-contattiorari.JPG") center no-repeat;
+}
+
+.arredamenti {
+  background: url("../pics/arredamenti.jpg") center no-repeat;
 }
 
 .hero {
@@ -514,6 +519,19 @@ textarea:focus-visible {
   height: 100%;
 }
 
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+}
+.gallery img {
+  aspect-ratio: 1/1;
+  width: 400px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
 @media only screen and (max-width: 1024px) {
   .bg-vector {
     width: 40%;
@@ -574,6 +592,9 @@ textarea:focus-visible {
   .scopri {
     opacity: 1;
   }
+  .gallery img {
+    width: 200px;
+  }
   .footer-link {
     justify-content: left;
   }
@@ -608,6 +629,9 @@ textarea:focus-visible {
   .page-content {
     margin: 80px 40px 40px 40px;
     gap: 80px;
+  }
+  .onpage {
+    justify-content: space-between;
   }
   .largeitem .row {
     display: block;
