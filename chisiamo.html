@@ -21,9 +21,11 @@
 </head>
 
 <body>
-  <!-- ______________________________________ADD TOPBAR HERE_____________________________________ -->
-  <div class="hero chisiamo">
-    <button class="secondary-button" onclick="navigateTo()">contattaci
+  <!-- Topbar placeholder -->
+  <div id="topbar"></div>
+
+   <div class="hero chisiamo">
+    <button class="secondary-button" onclick="navigateTo('contattiorari.html')">contattaci
       <img class="arrow" src="pics/arrow.svg" />
       <img class="arrow-hover" src="pics/arrow-hover.svg" />
     </button>
@@ -35,8 +37,8 @@
     <h2>Falegnameria Corradi, la Custode dell'Arte del Legno</h2>
 
     <div class="scroll-icon">
-      <img onclick="navigateTo()" class="scroll" src="pics/scroll.svg" alt="scroll" />
-      <img onclick="navigateTo()" class="scroll-after" src="pics/scroll-after.svg" alt="scroll" />
+      <img onclick="scrollToSection('pageContent')" class="scroll" src="pics/scroll.svg" alt="scroll" />
+      <img onclick="scrollToSection('pageContent')" class="scroll-after" src="pics/scroll-after.svg" alt="scroll" />
     </div>
   </div>
 
@@ -46,7 +48,7 @@
     <p>Chi Siamo</p>
   </div>
 
-  <div class="page-content">
+  <div class="page-content" id="pageContent">
     <div class="paragraph center">
       <h1>chi siamo</h1>
       <div class="bodycopy">
@@ -106,7 +108,7 @@
         <img class="fullwidth" src="pics/facade.JPG" />
       </div>
 
-      <button class="footer-link onpage" onclick="navigateTo()">realizzazioni
+      <button class="footer-link onpage" onclick="navigateTo('realizzazioni.html')">realizzazioni
         <img class="arrow" src="pics/arrow-black.svg" />
         <img class="arrow-hover" src="pics/arrow-hover-accent.svg" />
       </button>
@@ -114,6 +116,7 @@
   </div>
 
   <!-- _____________________________________ FOOTER HERE ____________________________________________ -->
+  <script src="js/falegnameria.js"></script>
 </body>
 
 </html>

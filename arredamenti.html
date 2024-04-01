@@ -21,9 +21,11 @@
 </head>
 
 <body>
-  <!-- ______________________________________ADD TOPBAR HERE_____________________________________ -->
+  <!-- Topbar placeholder -->
+  <div id="topbar"></div>
+
   <div class="hero arredamenti">
-    <button class="secondary-button" onclick="navigateTo()">contattaci
+    <button class="secondary-button" onclick="navigateTo('contattiorari.html')">contattaci
       <img class="arrow" src="pics/arrow.svg" />
       <img class="arrow-hover" src="pics/arrow-hover.svg" />
     </button>
@@ -35,8 +37,8 @@
     <h2>ARREDAMENTI: LA TUA CASA CON STILE</h2>
 
     <div class="scroll-icon">
-      <img onclick="navigateTo()" class="scroll" src="pics/scroll.svg" alt="scroll" />
-      <img onclick="navigateTo()" class="scroll-after" src="pics/scroll-after.svg" alt="scroll" />
+      <img onclick="scrollToSection('page-content')" class="scroll" src="pics/scroll.svg" alt="scroll" />
+      <img onclick="scrollToSection('page-content')" class="scroll-after" src="pics/scroll-after.svg" alt="scroll" />
     </div>
   </div>
 
@@ -48,7 +50,7 @@
     <p>Arredamenti</p>
   </div>
 
-  <div class="page-content">
+  <div class="page-content" id="pageContent">
 
     <div class="gallery">
       <img src="pics/wellness.jpg" />
@@ -69,23 +71,24 @@
     </div>
 
     <div class="bodycopy">
-      <button class="footer-link onpage" onclick="navigateTo()">realizzazioni
+      <button class="footer-link onpage" onclick="navigateTo('realizzazioni.html')">realizzazioni
         <img class="arrow" src="pics/arrow-black.svg" />
         <img class="arrow-hover" src="pics/arrow-hover-accent.svg" />
       </button>
 
-      <button class="footer-link onpage" onclick="navigateTo()">finestre
+      <button class="footer-link onpage" onclick="navigateTo('finestre.html')">finestre
         <img class="arrow" src="pics/arrow-black.svg" />
         <img class="arrow-hover" src="pics/arrow-hover-accent.svg" />
       </button>
 
-      <button class="footer-link onpage" onclick="navigateTo()">porte & portoncini
+      <button class="footer-link onpage" onclick="navigateTo('porte.html')">porte & portoncini
         <img class="arrow" src="pics/arrow-black.svg" />
         <img class="arrow-hover" src="pics/arrow-hover-accent.svg" />
       </button>
     </div>
   </div>
   <!-- _____________________________________ FOOTER HERE ____________________________________________ -->
+  <script src="js/falegnameria.js"></script>
 </body>
 
 </html>

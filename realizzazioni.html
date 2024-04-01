@@ -21,9 +21,11 @@
 </head>
 
 <body>
-  <!-- ______________________________________ADD TOPBAR HERE_____________________________________ -->
+  <!-- Topbar placeholder -->
+  <div id="topbar"></div>
+
   <div class="hero realizzazioni">
-    <button class="secondary-button" onclick="navigateTo()">contattaci
+    <button class="secondary-button" onclick="navigateTo('contattiorari.html')">contattaci
       <img class="arrow" src="pics/arrow.svg" />
       <img class="arrow-hover" src="pics/arrow-hover.svg" />
     </button>
@@ -35,8 +37,8 @@
     <h2>Dal Bosco alla Casa: Le Creazioni Uniche della Falegnameria Corradi</h2>
 
     <div class="scroll-icon">
-      <img onclick="navigateTo()" class="scroll" src="pics/scroll.svg" alt="scroll" />
-      <img onclick="navigateTo()" class="scroll-after" src="pics/scroll-after.svg" alt="scroll" />
+      <img onclick="scrollToSection('pageContent')" class="scroll" src="pics/scroll.svg" alt="scroll" />
+      <img onclick="scrollToSection('pageContent')" class="scroll-after" src="pics/scroll-after.svg" alt="scroll" />
     </div>
   </div>
 
@@ -46,19 +48,20 @@
     <p>Realizzazioni</p>
   </div>
 
-  <div class="page-content">
+  <div class="page-content" id="pageContent">
     <div class="paragraph fullwidth">
       <h1>le nostre realizzazioni </h1>
       <div class="bodycopy">
         <p>Lasciati ispirare dalle nostre creazioni.</p>
-        <p>Ogni pezzo che crea la Falegnameria Corradi è <strong>un'opera d'arte unica</strong>, plasmata con maestria e dedizione.</p>
+        <p>Ogni pezzo che crea la Falegnameria Corradi è <strong>un'opera d'arte unica</strong>, plasmata con maestria e
+          dedizione.</p>
         <p>Scopri il fascino e la bellezza del legno lavorato con passione, esplorando le molteplici sfaccettature dei
           nostri lavori.</p>
       </div>
     </div>
 
     <div class="row wrapper">
-      <div class="card arredamenti" onclick="navigateTo()">
+      <div class="card arredamenti" onclick="navigateTo('arredamenti.html')">
         <div class="card-title">
           <h2>Arredamenti</h2>
           <p><strong>La tua casa con stile</strong></p>
@@ -69,7 +72,7 @@
         </div>
       </div>
 
-      <div class="card finestre" onclick="navigateTo()">
+      <div class="card finestre" onclick="navigateTo('finestre.html')">
         <div class="card-title">
           <h2>Finestre</h2>
           <p><strong>Una boccata d’aria fresca</strong></p>
@@ -80,7 +83,7 @@
         </div>
       </div>
 
-      <div class="card porte" onclick="navigateTo()">
+      <div class="card porte" onclick="navigateTo('porte.html')">
         <div class="card-title">
           <h2>Porte & Portoncini</h2>
           <p><strong>Tra sogno e realtà</strong></p>
@@ -149,6 +152,7 @@
   </div>
 
   <!-- _____________________________________ FOOTER HERE ____________________________________________ -->
+  <script src="js/falegnameria.js"></script>
 </body>
 
 </html>

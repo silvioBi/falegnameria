@@ -21,25 +21,28 @@
 </head>
 
 <body>
-  <!-- ______________________________________ADD TOPBAR HERE_____________________________________ -->
+  <!-- Topbar placeholder -->
+  <div id="topbar"></div>
+
   <div class="hero home">
-    <button class="secondary-button" onclick="navigateTo()">contattaci
+    <button class="secondary-button" onclick="navigateTo('contattiorari.html')">contattaci
       <img class="arrow" src="pics/arrow.svg" />
       <img class="arrow-hover" src="pics/arrow-hover.svg" />
     </button>
 
     <!-- ___________________________________BACKDROP BLUR________________________________________ -->
 
+
     <img class="bg-vector" src="pics/bg-vector.svg" />
-    
+
     <h2>Lascia che il legno racconti la tua storia</h2>
 
     <div class="scroll-icon">
-      <img onclick="navigateTo()" class="scroll" src="pics/scroll.svg" alt="scroll" />
-      <img onclick="navigateTo()" class="scroll-after" src="pics/scroll-after.svg" alt="scroll" />
+      <img onclick="scrollToSection('pageContent')" class="scroll" src="pics/scroll.svg" alt="scroll" />
+      <img onclick="scrollToSection('pageContent')" class="scroll-after" src="pics/scroll-after.svg" alt="scroll" />
     </div>
   </div>
-  <div class="page-content">
+  <div class="page-content" id="pageContent">
     <div class="paragraph">
       <div>
         <h1>chi siamo</h1>
@@ -144,8 +147,8 @@
       </div>
     </div>
 
-<!--    _________________________________ADD DECORATION____________________________________ -->
-<!--     <div class="decoration10">
+    <!--    _________________________________ADD DECORATION____________________________________ -->
+    <!--     <div class="decoration10">
       <img src="pics/decoration10.svg" aria-hidden="true">
     </div> -->
 
@@ -154,6 +157,7 @@
 
 
   <!-- _____________________________________ FOOTER HERE ____________________________________________ -->
+  <script src="js/falegnameria.js"></script>
 </body>
 
 </html>

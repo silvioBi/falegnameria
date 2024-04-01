@@ -21,9 +21,11 @@
 </head>
 
 <body>
-  <!-- ______________________________________ADD TOPBAR HERE_____________________________________ -->
+  <!-- Topbar placeholder -->
+  <div id="topbar"></div>
+
   <div class="hero contattiorari">
-    <button class="secondary-button" onclick="navigateTo()">contattaci
+    <button class="secondary-button" onclick="scrollToSection('pageContent')">contattaci
       <img class="arrow" src="pics/arrow.svg" />
       <img class="arrow-hover" src="pics/arrow-hover.svg" />
     </button>
@@ -35,8 +37,8 @@
     <h2>Porta il tuo sogno da noi: contatti & orari</h2>
 
     <div class="scroll-icon">
-      <img onclick="navigateTo()" class="scroll" src="pics/scroll.svg" alt="scroll" />
-      <img onclick="navigateTo()" class="scroll-after" src="pics/scroll-after.svg" alt="scroll" />
+      <img onclick="scrollToSection('pageContent')" class="scroll" src="pics/scroll.svg" alt="scroll" />
+      <img onclick="scrollToSection('pageContent')" class="scroll-after" src="pics/scroll-after.svg" alt="scroll" />
     </div>
   </div>
 
@@ -46,9 +48,9 @@
     <p>Contatti & Orari</p>
   </div>
 
-  <div class="page-content">
+  <div class="page-content" id="pageContent">
     <div class="paragraph fullwidth">
-      <h1>le nostre realizzazioni </h1>
+      <h1>CONTATTI</h1>
 
       <div class="row wrapper">
         <div class="bodycopy">
@@ -121,7 +123,10 @@
     </div>
   </div>
 
-  <!-- _____________________________________ FOOTER HERE ____________________________________________ -->
+  <!-- Footer placeholder -->
+  <div id="footer"></div>
+
+  <script src="js/falegnameria.js"></script>
 </body>
 
 </html>
