@@ -1,7 +1,6 @@
-
 nav {
   position: fixed;
-  width: 100%;
+  width: 100vw;
   display: flex;
   justify-items: stretch;
   background-color: rgba($white, 0.25);
@@ -18,10 +17,7 @@ nav {
   margin: 12px 120px 12px 120px;
 }
 
-.menu-icon-hover {
-  display: none;
-}
-
+.menu-icon-hover,
 .nav-icons:hover .menu-icon {
   display: none;
 }
@@ -35,5 +31,6 @@ nav {
   top: 0;
   left: 0;
   width: 100%;
-  z-index: 1000; /* Ensure topbar appears on top of everything */
+  z-index: 1000;
+  /* Ensure topbar appears on top of everything */
 }

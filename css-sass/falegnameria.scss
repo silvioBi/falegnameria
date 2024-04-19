@@ -36,6 +36,7 @@ body {
 .menu h1:hover {
   font-size: 105px;
   line-height: 105px;
+  transition: 0.3s ease;
 }
 
 
@@ -126,12 +127,11 @@ textarea:focus-visible {
   letter-spacing: 0.64px;
 }
 
-/* ________________________DECORATION STYLE HERE__________________________________
-.decoration10 {
+/* .decoration10 {
   position: absolute;
   left: 20%;
   z-index: -1;
-} */
+}  */
 
 
 //CHI SIAMO / REALIZZAZIONI
@@ -194,7 +194,6 @@ textarea:focus-visible {
 .card:hover:before {
   background-color: rgba($white, 0.5);
   transition: 1s ease;
-
 }
 
 .arredamenti {

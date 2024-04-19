@@ -39,7 +39,7 @@ a {
 
 nav {
   position: fixed;
-  width: 100%;
+  width: 100vw;
   display: flex;
   justify-items: stretch;
   background-color: rgba(255, 247, 245, 0.25);
@@ -59,10 +59,7 @@ nav {
   margin: 12px 120px 12px 120px;
 }
 
-.menu-icon-hover {
-  display: none;
-}
-
+.menu-icon-hover,
 .nav-icons:hover .menu-icon {
   display: none;
 }
@@ -76,7 +73,8 @@ nav {
   top: 0;
   left: 0;
   width: 100%;
-  z-index: 1000; /* Ensure topbar appears on top of everything */
+  z-index: 1000;
+  /* Ensure topbar appears on top of everything */
 }
 
 button {
@@ -229,11 +227,11 @@ button {
 }
 
 .scroll {
-  animation: fadeAnimation 1.5s linear infinite alternate;
+  animation: fadeAnimation 1s linear infinite alternate;
 }
 
 .scroll-after {
-  animation: fadeAnimation 1.5s linear infinite alternate-reverse;
+  animation: fadeAnimation 1s linear infinite alternate-reverse;
 }
 
 @keyframes fadeAnimation {
@@ -341,6 +339,7 @@ body {
 .menu h1:hover {
   font-size: 105px;
   line-height: 105px;
+  transition: 0.3s ease;
 }
 
 .page-content {
@@ -442,12 +441,11 @@ textarea:focus-visible {
   letter-spacing: 0.64px;
 }
 
-/* ________________________DECORATION STYLE HERE__________________________________
-.decoration10 {
+/* .decoration10 {
   position: absolute;
   left: 20%;
   z-index: -1;
-} */
+}  */
 .fullwidth {
   width: 100%;
   height: auto;
@@ -546,6 +544,42 @@ textarea:focus-visible {
      object-fit: cover;
 }
 
+@media only screen and (min-width: 1600px) {
+  h1 {
+    font-size: 120px;
+  }
+  h2 {
+    font-size: 64px;
+  }
+  .menu h1:hover {
+    font-size: 160px;
+    line-height: 160px;
+  }
+  ::-moz-placeholder {
+    font-size: 20px;
+  }
+  .textarea,
+  .input,
+  ::placeholder,
+  p {
+    font-size: 20px;
+  }
+  label {
+    font-size: 16px;
+  }
+  .menu-icon,
+  .menu-icon-hover {
+    width: 64px;
+    height: auto;
+  }
+  .nav-logo {
+    height: 120px;
+    width: auto;
+  }
+  .hero .secondary-button {
+    top: 200px;
+  }
+}
 @media only screen and (max-width: 1024px) {
   .bg-vector {
     width: 40%;

@@ -1,5 +1,5 @@
 //close the manu and go back to the last page
-function closeMenu () {
+function closeMenu() {
   window.history.back();
   // CREATE ANIMATION STYLE
 }
@@ -7,12 +7,13 @@ function closeMenu () {
 // navigation between pages 
 function navigateTo(url) {
   window.location.href = url;
+
 }
 
 // scroll to section
 function scrollToSection(sectionId) {
   var section = document.getElementById(sectionId);
-  section.scrollIntoView({behavior: "smooth"});
+  section.scrollIntoView({ behavior: "smooth" });
   //_________________CREATE SCROLL ANIMATION___________________________________
 }
 
