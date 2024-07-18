@@ -1,7 +1,6 @@
 //close the manu and go back to the last page
-function closeMenu() {
+function goBack() {
   window.history.back();
-  // CREATE ANIMATION STYLE
 }
 
 // navigation between pages 
