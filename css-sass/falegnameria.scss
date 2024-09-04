@@ -259,12 +259,15 @@ textarea:focus-visible {
       @media only screen and (max-width: 900px) {
         padding-left: 100px;
       }
+      @media only screen and (min-width: 901px) and (max-width: 1800px) {
+        padding-left: 400px;
+      }
     }
   }
 
   &.bg-logo-vector-wrapper-bottom {
     top: 3000px;
-    
+
     height: 1500px;
     @media only screen and (max-width: 900px) {
       height: 1000px;

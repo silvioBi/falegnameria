@@ -716,6 +716,11 @@ textarea:focus-visible {
     padding-left: 100px;
   }
 }
+@media only screen and (min-width: 901px) and (max-width: 1800px) {
+  .bg-logo-vector-wrapper.bg-logo-vector-wrapper-top .bg-logo-vector {
+    padding-left: 400px;
+  }
+}
 .bg-logo-vector-wrapper.bg-logo-vector-wrapper-bottom {
   top: 3000px;
   height: 1500px;
