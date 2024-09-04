@@ -241,3 +241,38 @@ textarea:focus-visible {
 }
 
 @import './responsiveness';
+
+.bg-logo-vector-wrapper {
+  position: absolute;
+  z-index:-1;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  max-width: 100vw;
+
+  &.bg-logo-vector-wrapper-top {
+    top: 200px;
+
+    .bg-logo-vector {
+      opacity: 10%;
+
+      padding-left: 1400px;
+      @media only screen and (max-width: 900px) {
+        padding-left: 100px;
+      }
+    }
+  }
+
+  &.bg-logo-vector-wrapper-bottom {
+    top: 3000px;
+    
+    height: 1500px;
+    @media only screen and (max-width: 900px) {
+      height: 1000px;
+    }
+
+    .bg-logo-vector {
+      margin-left: -1500px;
+      opacity: 30%;
+    }
+  }
+}

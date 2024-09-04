@@ -43,15 +43,12 @@ nav {
   display: flex;
   justify-items: stretch;
   background-color: rgba(255, 247, 245, 0.25);
-  -webkit-backdrop-filter: blur(20px);
-          backdrop-filter: blur(20px);
+  backdrop-filter: blur(20px);
   border-bottom: 2px solid rgba(220, 91, 50, 0.05);
   margin: 0;
 }
 
 .nav-items {
-  width: -webkit-fill-available;
-  width: -moz-available;
   width: stretch;
   justify-content: space-between;
   align-items: center;
@@ -267,9 +264,7 @@ footer .row {
 .logo {
   display: grid;
   justify-self: center;
-  width: -moz-fit-content;
   width: fit-content;
-  height: -moz-fit-content;
   height: fit-content;
 }
 
@@ -365,7 +360,6 @@ form,
   display: flex;
   flex-direction: column;
   gap: 1rem;
-  min-width: -moz-fit-content;
   min-width: fit-content;
 }
 
@@ -416,7 +410,6 @@ input {
 
 textarea {
   height: 120px;
-  min-height: -moz-fit-content;
   min-height: fit-content;
   padding-top: 1rem;
 }
@@ -429,13 +422,6 @@ textarea:hover {
 input:focus-visible,
 textarea:focus-visible {
   outline: 2px solid #DC5B32;
-}
-
-::-moz-placeholder {
-  font-size: 16px;
-  font-family: Darker Grotesque;
-  font-weight: normal;
-  letter-spacing: 0.64px;
 }
 
 ::placeholder {
@@ -544,8 +530,7 @@ textarea:focus-visible {
 .gallery img {
   aspect-ratio: 1/1;
   width: 400px;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 
 @media only screen and (min-width: 1600px) {
@@ -558,9 +543,6 @@ textarea:focus-visible {
   .menu h1:hover {
     font-size: 160px;
     line-height: 160px;
-  }
-  ::-moz-placeholder {
-    font-size: 20px;
   }
   .textarea,
   .input,
@@ -714,4 +696,38 @@ textarea:focus-visible {
   .nav-items {
     margin: 8px 32px 8px 32px;
   }
-}/*# sourceMappingURL=falegnameria.css.map */
+}
+.bg-logo-vector-wrapper {
+  position: absolute;
+  z-index: -1;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  max-width: 100vw;
+}
+.bg-logo-vector-wrapper.bg-logo-vector-wrapper-top {
+  top: 200px;
+}
+.bg-logo-vector-wrapper.bg-logo-vector-wrapper-top .bg-logo-vector {
+  opacity: 10%;
+  padding-left: 1400px;
+}
+@media only screen and (max-width: 900px) {
+  .bg-logo-vector-wrapper.bg-logo-vector-wrapper-top .bg-logo-vector {
+    padding-left: 100px;
+  }
+}
+.bg-logo-vector-wrapper.bg-logo-vector-wrapper-bottom {
+  top: 3000px;
+  height: 1500px;
+}
+@media only screen and (max-width: 900px) {
+  .bg-logo-vector-wrapper.bg-logo-vector-wrapper-bottom {
+    height: 1000px;
+  }
+}
+.bg-logo-vector-wrapper.bg-logo-vector-wrapper-bottom .bg-logo-vector {
+  margin-left: -1500px;
+  opacity: 30%;
+}
+
+/*# sourceMappingURL=falegnameria.css.map */
