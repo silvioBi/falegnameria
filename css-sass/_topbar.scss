@@ -11,6 +11,9 @@ nav {
 
 .nav-items {
   width: 100%;
+  & .open-nav-items {
+    width: 90vw;
+  }
   justify-content: space-between;
   align-items: center;
   display: flex;

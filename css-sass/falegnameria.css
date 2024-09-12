@@ -55,6 +55,9 @@ nav {
   display: flex;
   margin: 12px 120px 12px 120px;
 }
+.nav-items .open-nav-items {
+  width: 90vw;
+}
 
 .menu-icon-hover,
 .nav-icons:hover .menu-icon {
