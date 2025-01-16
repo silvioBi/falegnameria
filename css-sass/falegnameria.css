@@ -78,6 +78,7 @@ nav {
 }
 
 button {
+  color: #0D0806;
   cursor: pointer;
   display: flex;
   align-items: center;
@@ -90,7 +91,6 @@ button {
 }
 
 .primary-button {
-  color: #0D0806;
   justify-content: center;
   background-color: #DC5B32;
   height: 48px;
